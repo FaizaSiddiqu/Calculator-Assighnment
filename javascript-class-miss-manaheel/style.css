@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./bubbles-on-purple-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;        /* Image ko screen ke mutabiq adjust karega */
+    background-position: center;
+}
+#main{
+    position: relative;
+    z-index: 1;
+}
+#box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);   /* Center alignment ke liye translate */
+    z-index: 2;        /* Z-index 2 taake image ke upar ho */
+    background-color: rgba(255, 255, 255, 0.9); /* Background ko halki transparency dene ke liye */
+    border-radius: 15px;
+    height: 35vw;
+    width: 25vw;
+    box-shadow: 2px 4px 2px purple;
+    margin-top: 2vw;
+}
+input{
+    width: 25vw;
+    height: 8vw;
+    color: white;
+    background-color: rgb(83, 36, 83);
+    border-radius: 5px;
+    font-size: 3vw;
+    text-align: right;
+}
+#btns{
+ padding: 15px;
+ border-radius: 5px;
+ font-size: 10px;
+   gap: 10px;
+}
+button{
+    background-color: rgb(185, 107, 185);;
+    height: 3.5vw;
+    width: 5.5vw;
+    color: white;
+    padding: 1vw 1vw 2vw 2vw;
+    margin-top: 1.5vw;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    align-items: center;
+}
+#opertors{
+  background-color: rgb(83, 36, 83);
+}
+
+
+
+
+
+
+  /* For smaller mobile devices */
+@media only screen and (max-width: 650px) {
+  #box {
+    height: 80vw;
+    width: 55vw;
+  }
+
+  input {
+    height: 20vw;
+    width: 55vw;
+    font-size: 6vw;
+    text-align: right;
+  }
+
+  button {
+  
+      background-color: rgb(185, 107, 185);;
+      height: 9vw;
+      width: 11vw;
+      color: white;
+      padding: 1vw 1vw 2vw 2vw;
+      margin-top: 1.5vw;
+      font-size: 4vw;
+      border-radius: 5px;
+      align-items: center;
+      
+ 
+  }
+
+
+}
+
